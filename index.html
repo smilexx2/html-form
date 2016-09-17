@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Online Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+    <h1><i class="fa fa-code fa-lg" aria-hidden="true"></i><br>The Code Review</h1>
+    <div class="container clearfix">
+        <div class="subtitle">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </div>
+        <form action="index.html" method="post" class="clearfix">
+
+            <fieldset id="contact-info">
+
+                <legend>Contact Information<i class="fa fa-info" aria-hidden="true"></i></legend>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="user_name" placeholder="Required" required>
+
+                <label for="mail">Email Address</label>
+                <input type="email" id="mail" name="user_email" placeholder="Required" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="user_phone" placeholder="Phone Number">
+
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="user_address" placeholder="Street Address">
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="user_city" placeholder="City">
+
+                <label for="state">State</label>
+                <select id="state" name="user_state">
+                    <option value="">Choose State</option>
+                    <option value="vic">Victoria</option>
+                    <option value="nsw">New South Wales</option>
+                    <option value="sa">South Australia</option>
+                    <option value="wa">West Australia</option>
+                    <option value="qld">Queensland</option>
+                    <option value="tas">Tasmania</option>
+                    <option value="nt">Northern Territory</option>
+                    <option value="act">ACT</option>
+                </select>
+
+                <label for="country">Country</label>
+                <select id="country">
+                    <option value="">Choose Country</option>
+                    <option value="australia">Australia</option>
+                </select>
+
+                <label for="zip-code">Zip Code</label>
+                <input type="number" id="zip-code" name="user_zip_code" min="1000" max="9999" placeholder="Zip Code">
+
+
+            </fieldset>
+
+            <fieldset id="news-set">
+
+                <legend>Newsletter<i class="fa fa-envelope-o" aria-hidden="true"></i> </legend>
+
+                <label>Select the newsletters you would like to receive</label>
+                <input type="checkbox" id="html-news" value="html_news" name="user_news" checked><label for="html-news">
+                <div class="checkbox"><i class="fa fa-check" aria-hidden="true"></i></div>HTML News</label><br>
+                <input type="checkbox" id="css-news" value="css_news" name="user_news">
+                <label for="css-news"><div class="checkbox"><i class="fa fa-check" aria-hidden="true"></i></div>CSS News</label><br>
+                <input type="checkbox" id="javascript-news" value="javascript_news" name="user_news">
+                <label for="javascript-news"><div class="checkbox"><i class="fa fa-check" aria-hidden="true"></i></div>Javascript News</label><br>
+
+                <label>Newsletter format</label>
+                <input type="radio" id="html-format" value="html_format" name="user_format" checked><label for="html-format"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i>HTML</label><br>
+                <input type="radio" id="plain-format" value="plain_format" name="user_format"><label for="plain-format"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i>Plain text</label>
+
+                <label for="comments">Other topics you'd like to hear about</label>
+                <textarea id="comments" name="user_comments" rows="3" placeholder="Type here..."></textarea>
+
+                <input type="checkbox" id="tac" value="yes" name="user_tac" checked><label for="tac">
+                <div class="checkbox"><i class="fa fa-check" aria-hidden="true"></i></div>Agree <a href="#tac-content">Terms and Conditions</a></label><br>
+
+
+                <button type="submit">Sign Up</button>
+
+            </fieldset>
+
+        </form>
+    </div>
+    <footer>
+        <p>Copyright The Code Review</p>
+    </footer>
+</body>
+
+</html>

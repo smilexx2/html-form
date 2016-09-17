@@ -1,0 +1,369 @@
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+}
+
+p {
+    font-weight: lighter;
+}
+
+p,
+label {
+    font-size: 1.1em;
+}
+
+h1 {
+    margin: 0;
+    padding: 1em 0;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.3em;
+}
+
+h1 i.fa {
+    margin-bottom: 0.5em;
+}
+
+.subtitle {
+    margin: 0 1em;
+    border-bottom: 4px solid;
+    padding: 1px 0 1em;
+}
+
+form {
+    text-align: left;
+    margin: 0 1em;
+    margin-top: 2px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 16px;
+    width: 100%;
+    background-color: #eff0f1;
+    color: #8a97a0;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 1em;
+    transition: opacity 0.5s;
+}
+
+select {
+    height: 52px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox {
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 4px;
+    width: 22px;
+    text-align: center;
+    margin: 0 0.5em 2px 0;
+    background-color: #eff0f1;
+    height: 22px;
+    vertical-align: middle;
+    transition: opacity 0.5s;
+}
+
+.checkbox i.fa {
+    display: none;
+    font-size: 18px;
+}
+
+input[type="checkbox"]:checked+label .checkbox i.fa {
+    display: block;
+    float: left;
+}
+
+input[type="radio"]+label i.fa-dot-circle-o,
+input[type="radio"]:checked+label i.fa-circle-o {
+    display: none;
+}
+
+input[type="radio"]:checked+label i.fa-dot-circle-o,
+input[type="radio"]+label i.fa-circle-o {
+    display: inline;
+}
+
+input[type="radio"]+label i.fa {
+    font-size: 22px;
+    margin: 0 0.5em 0 0;
+    transition: opacity 0.5s;
+}
+
+input#zip-code {
+    width: 150px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea {
+    border: 2px solid;
+    border-color: transparent;
+}
+
+input:focus,
+textarea:focus {
+    border-color: inherit;
+    transition: border-color 0.5s, opacity 0.5s;
+}
+
+input:not(:focus):hover,
+select:not(:focus):hover,
+textarea:not(:focus):hover,
+.checkbox:hover,
+input[type="checkbox"]+label:hover .checkbox,
+input[type="radio"]+label i.fa:hover,
+input[type="radio"]+label:hover i.fa {
+    opacity: 0.5;
+}
+
+input[id="name"]::-webkit-input-placeholder,
+input[id="mail"]::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    text-align: right;
+    font-style: italic;
+}
+
+input[id="name"]:-moz-placeholder,
+input[id="mail"]:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    text-align: right;
+    font-style: italic;
+    opacity: 1;
+}
+
+input[id="name"]::-moz-placeholder,
+input[id="mail"]::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    text-align: right;
+    font-style: italic;
+    opacity: 1;
+}
+
+input[id="name"]:-ms-input-placeholder,
+input[id="mail"]:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    text-align: right;
+    font-style: italic;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #4ebbb5;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #4ebbb5;
+    border-width: 1px 1px 3px;
+    margin-bottom: 1em;
+    transition: opacity 0.5s;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 1.5em 0 1em;
+    border-top: 2px solid;
+}
+
+fieldset#news-set label {
+    margin-bottom: 1em;
+}
+
+fieldset#news-set label:nth-last-of-type(2),
+fieldset#news-set label:nth-last-of-type(5) {
+    margin-top: 1em;
+}
+
+fieldset#news-set input[type="radio"]+label,
+fieldset#news-set input[type="checkbox"]+label {
+    display: inline-block;
+    margin-bottom: 0.5em;
+}
+
+fieldset#news-set input[id="tac"]+label {
+    margin-top: 0.5em;
+    margin-bottom: 2em;
+}
+
+legend {
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    display: inline-block;
+}
+
+legend i.fa {
+    padding-left: 0.4em;
+    margin-left: 0.4em;
+    border-left: 2px solid;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    color: #6e7f8d;
+}
+
+label.light {
+    font-weight: 300;
+    display: inline;
+}
+
+.number {
+    background-color: #5fcf80;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-right: 4px;
+    line-height: 30px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+    border-radius: 100%;
+}
+
+footer p {
+    font-style: italic;
+}
+
+@media screen and (min-width: 760px) {
+    fieldset#contact-info legend {
+        float: left;
+    }
+    fieldset#contact-info label {
+        float: left;
+        width: 30%;
+        clear: left;
+        padding: 16px 0;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="time"],
+    input[type="url"],
+    select {
+        float: left;
+        width: 70%;
+    }
+    input[id="zip-code"] {
+        float: left;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    fieldset#contact-info {
+        width: 60%;
+        float: left;
+        padding-right: 1em;
+    }
+    fieldset#news-set {
+        width: 40%;
+        float: left;
+        padding-left: 1em;
+    }
+}
+
+
+/* Color */
+
+h1 {
+    background-color: #2d3945;
+}
+
+h2,
+fieldset {
+    color: #2d3945;
+}
+
+input:focus,
+.subtitle,
+fieldset {
+    border-color: #2d3945;
+}
+
+.subtitle p,
+footer p {
+    color: #aeb3b7;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+    cursor: pointer;
+}
+
+fieldset#news-set label:nth-of-type(1),
+fieldset#news-set label:nth-of-type(5) {
+    cursor: inherit;
+}
+
+
+/* Clearfix */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

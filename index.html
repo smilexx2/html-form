@@ -68,23 +68,30 @@
 
                 <legend>Newsletter<i class="fa fa-envelope-o" aria-hidden="true"></i> </legend>
 
-                <label>Select the newsletters you would like to receive</label>
-                <input type="checkbox" id="html-news" value="html_news" name="user_news" checked><label for="html-news">
-                <div class="checkbox"><i class="fa fa-check" aria-hidden="true"></i></div>HTML News</label><br>
-                <input type="checkbox" id="css-news" value="css_news" name="user_news">
-                <label for="css-news"><div class="checkbox"><i class="fa fa-check" aria-hidden="true"></i></div>CSS News</label><br>
-                <input type="checkbox" id="javascript-news" value="javascript_news" name="user_news">
-                <label for="javascript-news"><div class="checkbox"><i class="fa fa-check" aria-hidden="true"></i></div>Javascript News</label><br>
+                <label class="full-width no-pointer">Select the newsletters you would like to receive</label>
 
-                <label>Newsletter format</label>
+                <input type="checkbox" id="html-news" value="html_news" name="user_news" checked>
+                <label class="checkbox" for="html-news"><i class="fa fa-check" aria-hidden="true"></i></label>
+                <label for="html-news">HTML News</label><br>
+
+                <input type="checkbox" id="css-news" value="css_news" name="user_news">
+                <label class="checkbox" for="css-news"><i class="fa fa-check" aria-hidden="true"></i></label>
+                <label for="css-news">CSS News</label><br>
+
+                <input type="checkbox" id="javascript-news" value="javascript_news" name="user_news">
+                <label class="checkbox" for="javascript-news"><i class="fa fa-check" aria-hidden="true"></i></label>
+                <label for="javascript-news">Javascript News</label><br>
+
+                <label class="full-width no-pointer">Newsletter format</label>
                 <input type="radio" id="html-format" value="html_format" name="user_format" checked><label for="html-format"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i>HTML</label><br>
                 <input type="radio" id="plain-format" value="plain_format" name="user_format"><label for="plain-format"><i class="fa fa-dot-circle-o" aria-hidden="true"></i><i class="fa fa-circle-o" aria-hidden="true"></i>Plain text</label>
 
-                <label for="comments">Other topics you'd like to hear about</label>
+                <label for="comments" class="full-width">Other topics you'd like to hear about</label>
                 <textarea id="comments" name="user_comments" rows="3" placeholder="Type here..."></textarea>
 
-                <input type="checkbox" id="tac" value="yes" name="user_tac" checked><label for="tac">
-                <div class="checkbox"><i class="fa fa-check" aria-hidden="true"></i></div>Agree <a href="#tac-content">Terms and Conditions</a></label><br>
+                <input type="checkbox" id="tac" value="yes" name="user_tac" checked>
+                <label class="checkbox" for="tac"><i class="fa fa-check" aria-hidden="true"></i></label>
+                <label for="tac">Agree <a href="#tac-content">Terms and Conditions</a></label><br>
 
 
                 <button type="submit">Sign Up</button>

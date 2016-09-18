@@ -99,14 +99,18 @@ input[type="checkbox"] {
     transition: opacity 0.5s;
 }
 
+.checkbox+label {
+    display: inline-block;
+    transition: opacity 0.5s;
+}
+
 .checkbox i.fa {
     display: none;
     font-size: 18px;
 }
 
-input[type="checkbox"]:checked+label .checkbox i.fa {
+input[type="checkbox"]:checked+.checkbox i.fa {
     display: block;
-    float: left;
 }
 
 input[type="radio"]+label i.fa-dot-circle-o,
@@ -154,7 +158,7 @@ input:not(:focus):hover,
 select:not(:focus):hover,
 textarea:not(:focus):hover,
 .checkbox:hover,
-input[type="checkbox"]+label:hover .checkbox,
+label.checkbox+label:hover,
 input[type="radio"]+label i.fa:hover,
 input[type="radio"]+label:hover i.fa {
     opacity: 0.5;
@@ -224,20 +228,15 @@ fieldset#news-set label {
     margin-bottom: 1em;
 }
 
-fieldset#news-set label:nth-last-of-type(2),
-fieldset#news-set label:nth-last-of-type(5) {
+fieldset#news-set label.full-width:not(:first-of-type) {
     margin-top: 1em;
 }
 
 fieldset#news-set input[type="radio"]+label,
 fieldset#news-set input[type="checkbox"]+label {
     display: inline-block;
-    margin-bottom: 0.5em;
-}
-
-fieldset#news-set input[id="tac"]+label {
-    margin-top: 0.5em;
-    margin-bottom: 2em;
+    margin-bottom: 0.4em;
+    margin-top: 0.3em;
 }
 
 legend {
@@ -354,8 +353,7 @@ textarea {
     cursor: pointer;
 }
 
-fieldset#news-set label:nth-of-type(1),
-fieldset#news-set label:nth-of-type(5) {
+fieldset#news-set label.no-pointer {
     cursor: inherit;
 }
 

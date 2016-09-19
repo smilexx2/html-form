@@ -21,7 +21,8 @@ p {
 }
 
 p,
-label {
+label,
+span {
     font-size: 1.1em;
 }
 
@@ -224,11 +225,12 @@ fieldset {
     border-top: 2px solid;
 }
 
-fieldset#news-set label {
+fieldset#news-set label,
+fieldset#news-set span {
     margin-bottom: 1em;
 }
 
-fieldset#news-set label.full-width:not(:first-of-type) {
+fieldset#news-set .full-width:not(:first-of-type) {
     margin-top: 1em;
 }
 
@@ -252,7 +254,8 @@ legend i.fa {
     border-left: 2px solid;
 }
 
-label {
+label,
+span {
     display: block;
     margin-bottom: 0.5em;
     color: #6e7f8d;
@@ -353,7 +356,7 @@ textarea {
     cursor: pointer;
 }
 
-fieldset#news-set label.no-pointer {
+fieldset#news-set span.no-pointer {
     cursor: inherit;
 }
 

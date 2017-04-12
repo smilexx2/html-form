@@ -246,6 +246,8 @@ legend {
     margin-bottom: 1em;
     font-weight: bold;
     display: inline-block;
+    float: left;
+    width: 100%;
 }
 
 legend i.fa {
